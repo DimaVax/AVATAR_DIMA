@@ -5,39 +5,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <main>
-        <section class="main-hero">
-           <img src="./images/logo.png" alt="Avatar the way of water">
-            <p class="hero-on/of">eng 🔘 uk</p>
-            <p class="hero-text">
-                Oe perlltxe hu tsamsiyu!
-                Ngari hu Eywa salew tirea,
-                tokx 'ì'awn slu Na'viyä hapxì.
-                Säwem nìayoeng!
-                
-                Хоробрий воїне, звертаюсь до тебе!
-                Твій дух йде з Ейвою,
-                твоє тіло залишається,
-                щоб стати частиною Народу.
-                Борись разом з нами!
-            </p>
-            <ul class="hero-list"> 
-                <li class="hero-item"><img src="./images/inst.png" alt="Insta"></li>
-                <li class="hero-item"><img src="./images/twitter.png" alt="Twitter"></li>
-                <li class="hero-item"><img src="./images/youtube.png" alt="Youtube"></li>
-            </ul>
-            <button type="button">Приєднатися до клану</button>
-        </section>
-        <section>
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-box">
+                    <img class="hero-logo" src="./images/logo.webp" alt="Avatar the way of water">
+                    <p class="hero-text hero-first">
+                        Oe perlltxe hu tsamsiyu!
+                        Ngari hu Eywa salew tirea,
+                        tokx 'ì'awn slu Na'viyä hapxì.
+                        Säwem nìayoeng!
+                    </p>
+                    <p class="hero-text hero-second">
+                        Хоробрий воїне, звертаюсь до тебе!
+                        Твій дух йде з Ейвою,
+                        твоє тіло залишається,
+                        щоб стати частиною Народу.
+                        Борись разом з нами!
+                    </p>
+                    <button class="hero-button" type="button">Приєднатися до клану</button>
+                </div>
 
+                <div class="hero-box">
+                    <div class="hero-switch">
+                        <p class="hero-onoff">eng <span>
+                            <svg class="hero-svg">
+                                <use href="./images/icons.svg#icon-onoff"></use>
+                            </svg>
+                        </span> uk</p>
+                    </div>
+                    
+                    <ul class="hero-list">
+                        <li class="hero-item">
+                            <a href="https://www.instagram.com/" class="hero-link">
+                                <svg class="hero-icon">
+                                    <use href="/images/icons.svg#icon-inst"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="hero-item">
+                            <a href="https://twitter.com/" class="hero-link">
+                                <svg class="hero-icon">
+                                    <use href="/images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="hero-item">
+                            <a href="https://www.youtube.com/" class="hero-link">
+                                <svg class="hero-icon">
+                                    <use href="/images/icons.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="quote">
+            <div class="container">
+                <h2 class="quote-title">“БАГАТО ЛЮДЕЙ З НЕБА ПРИЙДЕ. ВОНИ ПРИЙДУТЬ, ЯК ГРОЗА, ЯКА НІКОЛИ НЕ
+                    ЗАКІНЧУЄТЬСЯ.”</h2>
+                <p class="quote-text">Джейк Саллі</p>
+                <img src="./images/quote-image.webp" alt="пташка" class="quote-image">
+            </div>
+        </section>
+        <section class="trailer">
+            <div class="container">
+                <div class="trailer-box">
+                    <a href="https://www.youtube.com/watch?v=E8Qe0vS_I3I&ab_channel=KinomaniaFilmDistribution" class="trailer-button">Дивитись трейлер</a>
+                </div>
+                
+            </div>
+
+        </section>
+        <section class="quote">
+            <div class="container">
+                <h2 class="quote-title">“ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”</h2>
+                <p class="quote-text">Джейк Саллі</p>
+                <img src="./images/quote-image.webp" alt="пташка" class="quote-image">
+            </div>
+        </section>
+        <section class="language">
+            <div class="container">
+                <h2 class="language-title">Вчимо мову На’ві</h2>
+                <ul class="language-list">
+                    <li class="language-item">
+                        <p class="language-text">Привіт</p>
+                        <img src="./images/lang-right.webp" alt="" class="language-image">
+                        <p class="language-navi">Kaltxì</p>
+                    </li>
+                    <li class="language-item">
+                        <p class="language-text">Як справи?</p>
+                        <img src="images/quote-image.webp" alt="" class="language-image">
+                        <p class="language-navi">Ngaru lu fpom srak?</p>
+                    </li>
+                    <li class="language-item">
+                        <p class="language-text">Все добре</p>
+                        <img src="images/lang-left.webp" alt="" class="language-image">
+                        <p class="language-navi">Lu fpom</p>
+                    </li>
+                    <li class="language-item">
+                        <p class="language-text">Дякую</p>
+                        <img src="./images/lang-right.webp" alt="" class="language-image">
+                        <p class="language-navi">Irayo si</p>
+                    </li>
+                    <li class="language-item">
+                        <p class="language-text">Я бачу тебе</p>
+                        <img src="images/quote-image.webp" alt="" class="language-image">
+                        <p class="language-navi">Oel ngati kameie</p>
+                    </li>
+                    <li class="language-item">
+                        <p class="language-text">Слідуй за мною!</p>
+                        <img src="images/lang-left.webp" alt="" class="language-image">
+                        <p class="language-navi">Nong oet!</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="quote">
+            <div class="container">
+                <h2 class="quote-title">““НАША ВЕЛИКА МАТИ НЕ СТАЄ НА ЯКУСЬ СТОРОНУ, ВОНА ЗАХИЩАЄ ЛИШЕ ЖИТТЄВИЙ
+                    БАЛАНС.””</h2>
+                <p class="quote-text">Джейк Саллі</p>
+                <img src="./images/quote-image.webp" alt="пташка" class="quote-image">
+            </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
     </footer>
 </body>
 
